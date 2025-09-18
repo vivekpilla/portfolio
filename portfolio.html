@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .nav-bar {
+      display: flex;
+      height: 70px;
+      position: sticky;
+      background-color: #0A2540;
+      padding: 20px;
+      top: 0;
+      z-index: 1000;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      color: aliceblue;
+      font-weight: bold;
+      font-size: 30px;
+    }
+    .actions ul {
+      display: flex;
+      gap: 50px;
+      list-style-type: none;
+      font-size: 20px;
+    }
+    .actions a {
+      color: aliceblue;
+      text-decoration: none;
+    }
+    .actions a:hover {
+      color: sienna;
+      transition: color 0.5s ease;
+    }
+    .user-actions a {
+      text-decoration: none;
+      color: #0A2540;
+      font-size: 20px;
+      background: aliceblue;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .user-actions a:hover {
+      background: sienna;
+      color: white;
+    }
+    .home {
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      background: linear-gradient(to bottom, #3d9caf, white);
+    }
+    .home p {
+      font-size: 20px;
+    }
+    .about {
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    }
+    .about p{
+      font-size: 20px;
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+    .skills-projects {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 50px 20px;
+      background: white;
+    }
+    .tech-skill h2, .projects h2 {
+      margin-bottom: 20px;
+      color: #0A2540;
+    }
+    .skill-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .skill-item {
+      font-size: 18px;
+      cursor: pointer;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .skill-item:hover {
+      transform: scale(1.1);
+      color: sienna;
+    }
+    .projects-list {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    .projects-list li {
+      font-size: 20px;
+      margin-bottom: 10px;
+      list-style: none;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    .projects-list li:hover {
+      color: sienna;
+    }
+    footer {
+      background: #141515;
+      padding: 20px;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: white;
+      font-size: 18px;
+    }
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s ease;
+    }
+
+    .contact-me{
+            display: flex;
+            flex-direction: column;
+            background: rgb(241, 245, 245);
+            height: 100px;
+            text-align: center;
+            padding-top: 30px;
+        }
+        .container{
+            display: flex;
+            padding-top: 30px;
+            justify-content: space-around;
+        }
+        .li-items a{
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(12, 12, 12);
+        }
+
+
+    /* .footer-links a:hover {
+      color: sienna;
+    }
+    .footer-links i {
+      font-size: 20px;
+    } */
+  </style>
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+    integrity="sha512-1zcV8S43lVpndDhtpA4S4o1bFAj3Q+vFqEYuxFS2C8Fz3pHqLVN6A7RWZxRnyT7CKUw9vRbeqxRlZAj2s05+fA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+  />
+</head>
+<body>
+  <nav class="nav-bar">
+    <div class="logo">Portfolio</div>
+    <div class="actions">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Skills</a></li>
+      </ul>
+    </div>
+    <div class="user-actions">
+      <a href="https://www.linkedin.com/in/vivek-pilla2002?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+    </div>
+  </nav>
+
+  <section class="home">
+    <h1>Vivek Pilla</h1><br>
+    <p>Aspiring Full-Stack Engineer with a love for clean code.</p>
+  </section>
+
+  <section class="about">
+    <h2>About</h2><br>
+    <p>I am a computer science student an enthusiastic and curious learner with a strong passion for technology and continuous self-improvement. I enjoy exploring complex concepts in depth, applying my knowledge to solve problems, and consistently seeking opportunities to grow and expand my expertise.</p>
+  </section>
+
+  <section class="skills-projects">
+    <div class="tech-skill">
+      <h2>Technical Skills</h2>
+      <div class="skill-list">
+        <div class="skill-item">HTML</div>
+        <div class="skill-item">CSS</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">React</div>
+      </div>
+    </div>
+    <div class="projects">
+      <h2>Projects</h2>
+      <ul class="projects-list">
+        <li> Recipe Finder</li>
+        <li>Formatread </li>
+        <li>Ecommerce website</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- <footer>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/vivek-pilla2002?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i>Follow me on LinkedIn</a>
+      <a href=""><i class="fas fa-envelope"></i>vivekpilla2002@gmail.com</a>
+      <a href="https://github.com/vivekpilla" target="_blank"><i class="fab fa-github"></i>Github</a>
+      <a href=""><i class="fas fa-phone"></i>+919392045637</a>
+    </div>
+  </footer> -->
+  <section class="contact-me" id="contact">
+        <h2>You Can Contact Me Here</h2>
+        <ul class="container" type="none">
+            <li class="li-items"><a href="https://github.com/vivekpilla">Start Working with me <i class="fa-brands fa-github"></i></a></li>
+            <li class="li-items"><a href="https://www.linkedin.com/in/vivek-pilla2002/">Connect me in <i class="fa-brands fa-linkedin"></i></a></li>
+            <li class="li-items"><a href="https://mail.google.com/mail/u/0/#inbox">Get in touch <i class="fa-solid fa-square-envelope"></i></a></li>
+        </ul>
+    </section>
+</body>
+</html>
